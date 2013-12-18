@@ -23,7 +23,7 @@ public class Logout extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		request.removeAttribute("loginbean");
+		request.getSession().removeAttribute("loginbean");
 		request.getRequestDispatcher("/index.jsp").forward(request, response);
 	}
 

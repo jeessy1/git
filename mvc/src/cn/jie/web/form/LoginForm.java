@@ -20,6 +20,7 @@ public class LoginForm {
 	}
 	Map<String,String> map = new HashMap<String,String>();
 	
+
 	//判断用户名和密码是否相同
 	public boolean validate(){
 		

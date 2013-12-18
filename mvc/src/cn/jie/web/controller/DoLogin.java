@@ -2,6 +2,7 @@ package cn.jie.web.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Enumeration;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -26,8 +27,16 @@ public class DoLogin extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		LoginForm loginbean = WebUtils.request2Bean(request, LoginForm.class);
+		//判断带没带参数过来。防止直接访问http://localhost:8080/mvc/servlet/DoLogin，引起错误
+		Enumeration em = request.getParameterNames();
+		if(!em.hasMoreElements()){
+			request.getRequestDispatcher("/WEB-INF/jsp/login.jsp").forward(request, response);
+			return;
+		}
 		
+		
+		LoginForm loginbean = WebUtils.request2Bean(request, LoginForm.class);
+
 		//判断帐号密码是否相同,不同
 		if(!loginbean.validate()){
 			request.setAttribute("loginbean", loginbean);
@@ -36,8 +45,8 @@ public class DoLogin extends HttpServlet {
 		}
 		
 		//帐号密码相同
-		request.setAttribute("loginbean", loginbean);
-		request.getRequestDispatcher("/index.jsp").forward(request, response);
+		request.getSession().setAttribute("loginbean", loginbean);
+		response.sendRedirect(request.getContextPath()+"/index.jsp");
 		return;
 	}
 

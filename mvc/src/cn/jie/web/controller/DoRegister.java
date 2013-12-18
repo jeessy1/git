@@ -58,7 +58,7 @@ public class DoRegister extends HttpServlet {
 			} catch (UserExistException e) {
 				//4如果service处理不成功，不成功原因，跳回注册页面，显示用户已存在
 				formbean.getErrors().put("username", "注册的用户已存在");
-				request.setAttribute("username", formbean);
+				request.setAttribute("formbean", formbean);
 				request.getRequestDispatcher("/WEB-INF/jsp/register.jsp").forward(request, response);
 				return;
 			}catch(Exception e){

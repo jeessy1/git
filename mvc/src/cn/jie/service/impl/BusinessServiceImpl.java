@@ -24,7 +24,7 @@ public class BusinessServiceImpl implements BusinessService {
 		//先判断当前注册的用户是否在在
 		Boolean b = dao.find(user.getUsername());
 		if(b){
-			throw new UserExistException("用户已存在");//发现注册的用户在在，则给web层抛编译异常，给用户一个友好提示
+			throw new UserExistException();//发现注册的用户在在，则给web层抛编译异常，给用户一个友好提示
 		}else{
 			
 			//调用ServiceUtils.md5方法，加密密码。
