@@ -25,7 +25,7 @@ public class UserDaoTest {
 	@Test 
 	public void find(){
 		UserDaoXml userDaoXmlImpl = new  UserDaoXmlImpl();
-		userDaoXmlImpl.find("aa","123");
+		userDaoXmlImpl.find("a1a","123");
 	}
 	
 	@Test 

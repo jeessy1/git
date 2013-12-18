@@ -15,6 +15,21 @@
     <servlet-name>DoRegister</servlet-name>
     <servlet-class>cn.jie.web.controller.DoRegister</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>LoginUIServlet</servlet-name>
+    <servlet-class>cn.jie.web.UI.LoginUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DoLogin</servlet-name>
+    <servlet-class>cn.jie.web.controller.DoLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>cn.jie.web.controller.Logout</servlet-class>
+  </servlet>
+
+
+
 
 
 
@@ -29,6 +44,18 @@
   <servlet-mapping>
     <servlet-name>DoRegister</servlet-name>
     <url-pattern>/servlet/DoRegister</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginUIServlet</servlet-name>
+    <url-pattern>/servlet/LoginUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoLogin</servlet-name>
+    <url-pattern>/servlet/DoLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/servlet/Logout</url-pattern>
   </servlet-mapping>
 
 </web-app>

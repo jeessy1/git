@@ -76,7 +76,7 @@ public class RegisterForm {
 			}
 		}
 		
-		if(this.birthday!=null && this.birthday.trim().equals("")){
+		if(this.birthday!=null && !this.birthday.trim().equals("")){
 			try{
 			DateLocaleConverter dlc = new DateLocaleConverter(); //把日期转化，日期不对就抛异常
 			dlc.convert(this.birthday,"yyyy-MM-dd");
