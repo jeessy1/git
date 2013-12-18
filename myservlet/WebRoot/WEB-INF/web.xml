@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <servlet-name>MyFilter</servlet-name>
+    <servlet-class>cn.jie.servlet.MyFilter</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServletForward</servlet-name>
+    <servlet-class>cn.jie.servlet.ServletForward</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RequestInclude</servlet-name>
+    <servlet-class>cn.jie.servlet.RequestInclude</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>servletContextGet</servlet-name>
+    <servlet-class>cn.jie.context.servletContextGet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>referer</servlet-name>
+    <servlet-class>cn.jie.request.referer</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LastVisteTime</servlet-name>
+    <servlet-class>cn.jie.cookie.LastVisteTime</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>buyList</servlet-name>
+    <servlet-class>cn.jie.cookie.buyList</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>buyShow</servlet-name>
+    <servlet-class>cn.jie.cookie.buyShow</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SessionDemo1</servlet-name>
+    <servlet-class>cn.jie.session.SessionDemo1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SessionDemo2</servlet-name>
+    <servlet-class>cn.jie.session.SessionDemo2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-class>cn.jie.session.WelcomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FormServlet</servlet-name>
+    <servlet-class>cn.jie.session.FormServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DoFormServlet</servlet-name>
+    <servlet-class>cn.jie.session.DoFormServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CheckCode</servlet-name>
+    <servlet-class>cn.jie.session.CheckCode</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>MyFilter</servlet-name>
+    <url-pattern>/servlet/MyFilter</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletForward</servlet-name>
+    <url-pattern>/servlet/ServletForward</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestInclude</servlet-name>
+    <url-pattern>/servlet/RequestInclude</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servletContextGet</servlet-name>
+    <url-pattern>/servlet/servletContextGet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>referer</servlet-name>
+    <url-pattern>/servlet/referer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LastVisteTime</servlet-name>
+    <url-pattern>/servlet/LastVisteTime</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>buyList</servlet-name>
+    <url-pattern>/servlet/buyList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>buyShow</servlet-name>
+    <url-pattern>/servlet/buyShow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SessionDemo1</servlet-name>
+    <url-pattern>/servlet/SessionDemo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SessionDemo2</servlet-name>
+    <url-pattern>/servlet/SessionDemo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <url-pattern>/servlet/WelcomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FormServlet</servlet-name>
+    <url-pattern>/servlet/FormServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoFormServlet</servlet-name>
+    <url-pattern>/servlet/DoFormServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckCode</servlet-name>
+    <url-pattern>/servlet/CheckCode</url-pattern>
+  </servlet-mapping>
+
+</web-app>

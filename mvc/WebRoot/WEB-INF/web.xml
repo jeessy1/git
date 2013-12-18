@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <servlet-name>RegisterUIServlet</servlet-name>
+    <servlet-class>cn.jie.web.UI.RegisterUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegisterForm</servlet-name>
+    <servlet-class>cn.jie.web.form.RegisterForm</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DoRegister</servlet-name>
+    <servlet-class>cn.jie.web.controller.DoRegister</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>RegisterUIServlet</servlet-name>
+    <url-pattern>/servlet/RegisterUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterForm</servlet-name>
+    <url-pattern>/servlet/RegisterForm</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoRegister</servlet-name>
+    <url-pattern>/servlet/DoRegister</url-pattern>
+  </servlet-mapping>
+
+</web-app>
